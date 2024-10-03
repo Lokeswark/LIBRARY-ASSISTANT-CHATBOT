@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chatbot-container {
+            background-color: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .chatbot-header {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .chatbot-message {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            min-height: 50px;
+            color: #333;
+            white-space: pre-line;
+        }
+        .chatbot-input-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .chatbot-input-container input {
+            width: 75%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .chatbot-input-container button {
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .chatbot-input-container button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">HICET Library Chatbot</div>
+        <div class="chatbot-message" id="chatbot-message">Welcome to the HICET Library! Please enter your department (CSE, ECE, Mech, Civil, Aero, IT, AIML, Agri, EEE):</div>
+        <div class="chatbot-input-container">
+            <input type="text" id="user-input" placeholder="Type here...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
